@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{425BEDFF-E501-4050-A2B3-2B28D8156A18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WebservicesSage</RootNamespace>
+    <AssemblyName>WebservicesSage</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB, Version=4.1.4.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <HintPath>packages\LiteDB.4.1.4\lib\net40\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectDumping, Version=2.4.19218.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ObjectDumper.NET.2.4.19218.1\lib\net45\ObjectDumping.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsFormsControlLibrary1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WindowsFormsControlLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cotnroller\ControllerArticle.cs" />
+    <Compile Include="Cotnroller\ControllerClient.cs" />
+    <Compile Include="Cotnroller\ControllerClientLivraisonAdress.cs" />
+    <Compile Include="Cotnroller\ControllerCommande.cs" />
+    <Compile Include="Cotnroller\ControllerConfiguration.cs" />
+    <Compile Include="Cotnroller\ControllerGammes.cs" />
+    <Compile Include="Devis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devis.designer.cs">
+      <DependentUpon>Devis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditArticle.designer.cs">
+      <DependentUpon>EditArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MappingExpeditionMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MappingExpeditionMode.Designer.cs">
+      <DependentUpon>MappingExpeditionMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MappingInfosLibre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MappingInfosLibre.designer.cs">
+      <DependentUpon>MappingInfosLibre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MappingOrdersStaut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MappingOrdersStaut.Designer.cs">
+      <DependentUpon>MappingOrdersStaut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newUI.Designer.cs">
+      <DependentUpon>newUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Object\Article.cs" />
+    <Compile Include="Object\ArticleNomenclature.cs" />
+    <Compile Include="Object\Attribute\Attribute.cs" />
+    <Compile Include="Object\Categories\CategoriesSearch.cs" />
+    <Compile Include="Object\Category.cs" />
+    <Compile Include="Object\CatTarSearch\CatTarifSearch.cs" />
+    <Compile Include="Object\Conditionnement.cs" />
+    <Compile Include="Object\Customer.cs" />
+    <Compile Include="Object\CustomerSearchByEmail\CustomerSearchByEmail.cs" />
+    <Compile Include="Object\CustomerSearch\CustomerSearch.cs" />
+    <Compile Include="Object\DB.cs" />
+    <Compile Include="Object\DBObject\LinkedProductCategories.cs" />
+    <Compile Include="Object\DBObject\LinkedProductDB.cs" />
+    <Compile Include="Object\DBObject\LinkedProductGammes.cs" />
+    <Compile Include="Object\DBObject\LinkedProductInfoLibre.cs" />
+    <Compile Include="Object\DBObject\LinkedProductPrixGammes.cs" />
+    <Compile Include="Object\DBObject\LinkedProductPrixRemises.cs" />
+    <Compile Include="Object\DBObject\LinkedProductPrixRemisesClient.cs" />
+    <Compile Include="Object\Devis\Devis.cs" />
+    <Compile Include="Object\ISO3166.cs" />
+    <Compile Include="Object\Order\OrderSearch.cs" />
+    <Compile Include="Object\PrixCatTarif.cs" />
+    <Compile Include="Object\PrixClientTarif.cs" />
+    <Compile Include="Object\PrixRemiseClient.cs" />
+    <Compile Include="Object\Categories\ProductCategories.cs" />
+    <Compile Include="Object\RemiseFamille.cs" />
+    <Compile Include="Object\RemiseFamilleClient.cs" />
+    <Compile Include="Object\Search\AttributeSearchCriteria.cs" />
+    <Compile Include="Object\Client.cs" />
+    <Compile Include="Object\ClientLivraisonAdress.cs" />
+    <Compile Include="Object\Commande.cs" />
+    <Compile Include="Object\Contact.cs" />
+    <Compile Include="Object\DBObject\LinkedCommandeDB.cs" />
+    <Compile Include="Object\Gamme.cs" />
+    <Compile Include="Object\GroupeTarrifaire.cs" />
+    <Compile Include="Object\InfoLibre.cs" />
+    <Compile Include="Object\PrixGamme.cs" />
+    <Compile Include="Object\PrixRemise.cs" />
+    <Compile Include="Object\Product.cs" />
+    <Compile Include="Object\ProductSearchCriteria.cs" />
+    <Compile Include="Object\SpecialPriceClient.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ServiceAbstract.cs" />
+    <Compile Include="Services\ServiceArticle.cs" />
+    <Compile Include="Services\ServiceClient.cs" />
+    <Compile Include="Services\ServiceCommande.cs" />
+    <Compile Include="Services\ServiceGroupeTarrifaire.cs" />
+    <Compile Include="Services\ServicesGammes.cs" />
+    <Compile Include="Singleton\SingletonConnection.cs" />
+    <Compile Include="Singleton\SingletonServices.cs" />
+    <Compile Include="Singleton\SingletonUI.cs" />
+    <Compile Include="Utils\Enums\EnumEndPoint.cs" />
+    <Compile Include="Utils\UtilsConfig.cs" />
+    <Compile Include="Utils\UtilsLinkedCommande.cs" />
+    <Compile Include="Utils\UtilsMail.cs" />
+    <Compile Include="Utils\UtilsSerialize.cs" />
+    <Compile Include="Utils\UtilsWebservices.cs" />
+    <EmbeddedResource Include="Devis.resx">
+      <DependentUpon>Devis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditArticle.resx">
+      <DependentUpon>EditArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappingExpeditionMode.resx">
+      <DependentUpon>MappingExpeditionMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappingInfosLibre.resx">
+      <DependentUpon>MappingInfosLibre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappingOrdersStaut.resx">
+      <DependentUpon>MappingOrdersStaut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newUI.resx">
+      <DependentUpon>newUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cotnroller\ControllerGroupeTarrifaire.cs" />
+    <None Include="bin\Debug\Montserrat-Regular.ttf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-icon-29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-icon-291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Objets100cLib">
+      <Guid>{8B42EFD1-11DE-4AF5-8F95-2901702D7A46}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

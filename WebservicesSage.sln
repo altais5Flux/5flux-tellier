@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebservicesSage", "WebservicesSage.csproj", "{425BEDFF-E501-4050-A2B3-2B28D8156A18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsControlLibrary1", "..\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1.csproj", "{9A931A14-A146-402B-A67C-11496737E3B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{425BEDFF-E501-4050-A2B3-2B28D8156A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425BEDFF-E501-4050-A2B3-2B28D8156A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425BEDFF-E501-4050-A2B3-2B28D8156A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425BEDFF-E501-4050-A2B3-2B28D8156A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A931A14-A146-402B-A67C-11496737E3B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A931A14-A146-402B-A67C-11496737E3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A931A14-A146-402B-A67C-11496737E3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A931A14-A146-402B-A67C-11496737E3B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA841E2A-DCFB-464F-B0DC-5D21AF042B09}
+	EndGlobalSection
+EndGlobal
